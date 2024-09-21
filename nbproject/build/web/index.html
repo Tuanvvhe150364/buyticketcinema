@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .movie-card img {
+            height: 350px;
+            object-fit: cover;
+        }
+        .showtimes-btn {
+            background-color: #ff6600;
+            color: white;
+            transition: all 0.3s;
+        }
+        .showtimes-btn:hover {
+            background-color: #cc5200;
+            color: white;
+        }
+        .footer {
+            background-color: #212529;
+            color: white;
+            padding: 40px 0;
+        }
+        </style>
+    </head>
+    <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Movie Booking</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Showtimes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel for Featured Movies -->
+    <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1920x600" class="d-block w-100" alt="Movie 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Movie 1 Title</h5>
+                    <p>Now Showing</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1920x600" class="d-block w-100" alt="Movie 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Movie 2 Title</h5>
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1920x600" class="d-block w-100" alt="Movie 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Movie 3 Title</h5>
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Movie Listings Section -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Now Showing</h2>
+        <div class="row">
+            <!-- Movie 1 -->
+            <div class="col-md-3">
+                <div class="card movie-card">
+                    <img src="https://via.placeholder.com/300x450" class="card-img-top" alt="Movie 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Movie 1</h5>
+                        <p class="card-text">Action, Adventure</p>
+                        <a href="#" class="btn showtimes-btn">View Showtimes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 2 -->
+            <div class="col-md-3">
+                <div class="card movie-card">
+                    <img src="https://via.placeholder.com/300x450" class="card-img-top" alt="Movie 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Movie 2</h5>
+                        <p class="card-text">Comedy, Drama</p>
+                        <a href="#" class="btn showtimes-btn">View Showtimes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 3 -->
+            <div class="col-md-3">
+                <div class="card movie-card">
+                    <img src="https://via.placeholder.com/300x450" class="card-img-top" alt="Movie 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Movie 3</h5>
+                        <p class="card-text">Sci-fi, Thriller</p>
+                        <a href="#" class="btn showtimes-btn">View Showtimes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Movie 4 -->
+            <div class="col-md-3">
+                <div class="card movie-card">
+                    <img src="https://via.placeholder.com/300x450" class="card-img-top" alt="Movie 4">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Movie 4</h5>
+                        <p class="card-text">Animation, Family</p>
+                        <a href="#" class="btn showtimes-btn">View Showtimes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p>&copy; 2024 Movie Booking System. All Rights Reserved.</p>
+            <p>Contact Us: support@moviebooking.com</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
