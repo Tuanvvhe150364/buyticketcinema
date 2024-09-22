@@ -1,9 +1,8 @@
-package control;
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
+package control;
 
 import dao.DAO;
 import entity.Movie;
@@ -19,7 +18,7 @@ import java.util.List;
  *
  * @author pc
  */
-public class HomeController extends HttpServlet {
+public class ActiveMovie extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,10 +32,13 @@ public class HomeController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        String aid = request.getParameter("aid");
         DAO dao = new DAO();
-        List<Movie> movie = dao.getAllMovie();
-         request.setAttribute("listM", movie);
+         List<Movie> movieID = dao.getMovieByAID(aid);
+         request.setAttribute("tag", aid);
+         request.setAttribute("listM", movieID);
         request.getRequestDispatcher("homepage.jsp").forward(request, response);
+    
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -51,7 +53,7 @@ public class HomeController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-            processRequest(request, response);
+        processRequest(request, response);
     }
 
     /**

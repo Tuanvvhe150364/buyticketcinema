@@ -23,11 +23,12 @@ public class Movie {
     private String avatarImage;
     private String duration;
     private Date releaseDate;
+    private int activeId;
 
     public Movie() {
     }
 
-    public Movie(int movieId, int cinemaId, String movieName, String dimension, String description, int directorId, String actor, String language, String trailer, String avatarImage, String duration, Date releaseDate) {
+    public Movie(int movieId, int cinemaId, String movieName, String dimension, String description, int directorId, String actor, String language, String trailer, String avatarImage, String duration, Date releaseDate, int activeId) {
         this.movieId = movieId;
         this.cinemaId = cinemaId;
         this.movieName = movieName;
@@ -40,6 +41,7 @@ public class Movie {
         this.avatarImage = avatarImage;
         this.duration = duration;
         this.releaseDate = releaseDate;
+        this.activeId = activeId;
     }
 
     public int getMovieId() {
@@ -138,10 +140,17 @@ public class Movie {
         this.releaseDate = releaseDate;
     }
 
+    public int getActiveId() {
+        return activeId;
+    }
+
+    public void setActiveId(int activeId) {
+        this.activeId = activeId;
+    }
+
     @Override
     public String toString() {
-        return "Movie{" + "movieId=" + movieId + ", cinemaId=" + cinemaId + ", movieName=" + movieName + ", dimension=" + dimension + ", description=" + description + ", directorId=" + directorId + ", actor=" + actor + ", language=" + language + ", trailer=" + trailer + ", avatarImage=" + avatarImage + ", duration=" + duration + ", releaseDate=" + releaseDate + '}';
+        return "Movie{" + "movieId=" + movieId + ", cinemaId=" + cinemaId + ", movieName=" + movieName + ", dimension=" + dimension + ", description=" + description + ", directorId=" + directorId + ", actor=" + actor + ", language=" + language + ", trailer=" + trailer + ", avatarImage=" + avatarImage + ", duration=" + duration + ", releaseDate=" + releaseDate + ", activeId=" + activeId + '}';
     }
-    
     
 }
