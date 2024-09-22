@@ -39,7 +39,7 @@
     <div class="row pt-5">
         <!-- Poster -->
         <div class="col-md-4">
-            <img style="width: 80%; " src="${movie.avatarImage}" alt="Movie Poster" class="movie-poster">
+            <img style="width: 80%; display: block; margin: 0 auto" src="${movie.avatarImage}" alt="Movie Poster" class="movie-poster">
         </div>
 
         <!-- Movie Information -->

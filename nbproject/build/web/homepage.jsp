@@ -214,8 +214,8 @@
                             <div class="card">
                                 <img src="https://files.betacorp.vn//media/images/2024/09/20/uvk-comeback-545-x-415-135454-200924-21.png" class="card-img-top" alt="Combo Ngon Dịu">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Combo “Ngon Dịu”</h5>
-                                    <p>Mua combo “Ngon Dịu” tặng kèm vòng tay Blackpink siêu độc lạ.</p>
+                                    <h5 class="card-title">Combo “Ngày trở lại”</h5>
+                                    <p>Mua combo “Ngày trở lại” 1 bắp 1 nước chỉ với giá 29k.</p>
                                 </div>
                             </div>
                         </div>
@@ -225,8 +225,8 @@
                             <div class="card">
                                 <img src="https://files.betacorp.vn//media/images/2024/09/09/uu-dai-dinh-noc-545-x-415-095255-090924-94.png" class="card-img-top" alt="Combo Túi Tote">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Combo “Túi Tote & Quai Xách Ly”</h5>
-                                    <p>Mua combo bắp nước kèm túi tote hoặc quai xách ly siêu xinh với giá ưu đãi.</p>
+                                    <h5 class="card-title">Combo “Mừng sinh nhật Beta”</h5>
+                                    <p>Mua combo bất kỳ nhận ngay 1 ly Lipton FREE size lớn.</p>
                                 </div>
                             </div>
                         </div>
@@ -236,8 +236,8 @@
                             <div class="card">
                                 <img src="https://files.betacorp.vn//cms/images/2024/04/03/545x415-mad-sale-day-131034-030424-25.jpg" class="card-img-top" alt="Combo Trung Thu Sum Vầy">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Combo “Trung Thu Sum Vầy”</h5>
-                                    <p>Thưởng thức ngay combo bánh Trung Thu hảo hạng của BHD Star.</p>
+                                    <h5 class="card-title">Combo “Mad sale day”</h5>
+                                    <p>Thứ 2 đầu tiên của tháng đồng giá vé 45k và tặng 1 popcorn.</p>
                                 </div>
                             </div>
                         </div>
