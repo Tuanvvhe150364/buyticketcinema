@@ -8,6 +8,10 @@
         <servlet-name>ActiveMovie</servlet-name>
         <servlet-class>control.ActiveMovie</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DetailMovie</servlet-name>
+        <servlet-class>control.DetailMovie</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -15,5 +19,9 @@
     <servlet-mapping>
         <servlet-name>ActiveMovie</servlet-name>
         <url-pattern>/active</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetailMovie</servlet-name>
+        <url-pattern>/detail</url-pattern>
     </servlet-mapping>
 </web-app>

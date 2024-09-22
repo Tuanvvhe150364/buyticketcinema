@@ -26,23 +26,23 @@
                 color: #fff;
             }
             .nav-tabs {
-    border-bottom: 1px solid #ddd;
-}
+                border-bottom: 1px solid #ddd;
+            }
 
-.nav-tabs .nav-link {
-    font-weight: bold;
-    color: #000; /* Black color for inactive */
-}
+            .nav-tabs .nav-link {
+                font-weight: bold;
+                color: #000; /* Black color for inactive */
+            }
 
-.nav-tabs .nav-link.active {
-    color: #0066cc; /* Blue for active */
-    border-color: #0066cc; /* Blue border */
-    border-bottom: 3px solid #0066cc; /* Blue underline for active */
-}
+            .nav-tabs .nav-link.active {
+                color: #0066cc; /* Blue for active */
+                border-color: #0066cc; /* Blue border */
+                border-bottom: 3px solid #0066cc; /* Blue underline for active */
+            }
 
-.nav-tabs .nav-link:hover {
-    color: #0066cc; /* Change color on hover */
-}
+            .nav-tabs .nav-link:hover {
+                color: #0066cc; /* Change color on hover */
+            }
             .hero {
                 background-color: #0033cc;
                 color: white;
@@ -112,91 +112,60 @@
     <body>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a href="home"><img style="width: 100px; height: auto;" src="https://i.gyazo.com/f42624877a99b415498194df29e2e45b.png" ></a>
-                
+        <jsp:include page="navbar.jsp"></jsp:include>
 
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <!-- Movie Carousel -->
+            <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://files.betacorp.vn/media/images/2024/09/11/sua-phim-hay-t9-rap-lon-1702x621-134438-110924-17.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Quỷ Án</h5>
+                            <p>13.09</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://files.betacorp.vn/media/images/2024/09/01/1702x621-17-132015-010924-34.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Anh Trai Vượt Mọi Tam Tai</h5>
+                            <p>13.09</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://files.betacorp.vn/media/images/2024/09/11/tao-net-don-trang-1702-x-621-133621-110924-24.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Cám</h5>
+                            <p>20.09</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Lịch Chiếu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Phim</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Rạp</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Giá Vé</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Tin mới</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Khuyến Mãi</a>
-                        </li>
-                    </ul>
-                </div>
+                <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </nav>
 
-        <!-- Movie Carousel -->
-        <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://files.betacorp.vn/media/images/2024/09/11/sua-phim-hay-t9-rap-lon-1702x621-134438-110924-17.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Quỷ Án</h5>
-                        <p>13.09</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://files.betacorp.vn/media/images/2024/09/01/1702x621-17-132015-010924-34.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Anh Trai Vượt Mọi Tam Tai</h5>
-                        <p>13.09</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://files.betacorp.vn/media/images/2024/09/11/tao-net-don-trang-1702-x-621-133621-110924-24.png" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Cám</h5>
-                        <p>20.09</p>
-                    </div>
-                </div>
+
+            <!-- Movie Listing Section -->
+            <div class="container mt-5">
+
+                <div class="container mt-4 p-3">
+                    <ul class="nav nav-tabs justify-content-center h2">
+                        <li class="nav-item">
+                            <a class="nav-link <%= "0".equals(request.getAttribute("tag")) ? "active" : "" %>" href="active?aid=0">PHIM SẮP CHIẾU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <%= "1".equals(request.getAttribute("tag")) ? "active" : "" %>" href="active?aid=1">PHIM ĐANG CHIẾU</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link <%= "2".equals(request.getAttribute("tag")) ? "active" : "" %>" href="active?aid=2">SUẤT CHIẾU ĐẶC BIỆT</a>
+                    </li>
+                </ul>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-
-        <!-- Movie Listing Section -->
-        <div class="container mt-5">
-           
-     <div class="container mt-4 p-3">
-    <ul class="nav nav-tabs justify-content-center h2">
-        <li class="nav-item">
-            <a class="nav-link <%= "0".equals(request.getAttribute("tag")) ? "active" : "" %>" href="active?aid=0">PHIM SẮP CHIẾU</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link <%= "1".equals(request.getAttribute("tag")) ? "active" : "" %>" href="active?aid=1">PHIM ĐANG CHIẾU</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link <%= "2".equals(request.getAttribute("tag")) ? "active" : "" %>" href="active?aid=2">SUẤT CHIẾU ĐẶC BIỆT</a>
-        </li>
-    </ul>
-</div>
 
             <div class="row" >
 
@@ -205,7 +174,9 @@
                     <div class="col-md-3">
 
                         <div class="card movie-card">
-                            <img src="${o.avatarImage}" class="card-img-top" >
+                            <a href="detail?movieId=${o.movieId}">
+                                <img src="${o.avatarImage}" class="card-img-top" alt="${o.movieName}">
+                            </a>
                             <div class="card-body">
                                 <h5 class="movie-title">${o.movieName}</h5>
                                 <p class="movie-info">Thể loại: Update...</p>
