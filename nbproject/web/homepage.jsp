@@ -101,11 +101,7 @@
                 left: 20px;
             }
 
-            .footer {
-                background-color: #003399; /* Dark blue */
-                color: #fff;
-                padding: 20px 0;
-            }
+           
 
         </style>
     </head>
@@ -247,12 +243,12 @@
                         </div>
                     </div>
                 </div>
-
-
+<!--                Map-->
+<iframe style="padding-top: 5%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.523388155856!2d105.77231507599296!3d21.011733980633387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313453209305f15b%3A0xef45eb492b0d2577!2zQmV0YSBDaW5lbWFzIE3hu7kgxJDDrG5o!5e0!3m2!1svi!2s!4v1727029598400!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
                 <!-- Footer -->
-                <footer class="footer mt-5">
+                <footer class=" mt-5 ">
                     <div class="container text-center">
                         <p>Beta Cinemas - &copy; 2024. All Rights Reserved.</p>
                         <h5>Made by group 1 - SWP391</h5>
